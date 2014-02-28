@@ -1,0 +1,16 @@
+{
+  "name": "web-wheels",
+  "version": "0.0.0",
+  "description": "A few wheels of web development",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "shellsong",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^1.17.1"
+  }
+}
