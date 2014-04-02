@@ -1,5 +1,5 @@
-var eventEmitterMixin = require('../lib/event-emitter')
 var assert = require('assert')
+var eventEmitterMixin = require('../lib/event-emitter')
 var slice = Array.prototype.slice
 function createSpyFn(impl){
   var impl = impl || function(){}
