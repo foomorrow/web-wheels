@@ -18,5 +18,5 @@ var html = render({
   items: [{name: 'Tom'}, {name: 'Jerry'}]
 })
 
-html // <h1>Title</h1><ul><li>Tom</li><li>Jerry</li></ul>
+console.log(html) // <h1>Title</h1><ul><li>Tom</li><li>Jerry</li></ul>
 ```
