@@ -12,6 +12,11 @@ describe('Regex Based Template Engine', () => {
   }
   it('create render function with defaultSetting start with comment', () => {
     var renderer = template(
+      {
+        escape: ['<%-', '%>'],
+        evaluate: ['<%', '%>'],
+        interpolate: ['<%=', '%>']
+      },
       '<%- comment head %>'+
       '<p class="c" \n><%=string%></p>'+
       '<ul>'+
@@ -25,6 +30,11 @@ describe('Regex Based Template Engine', () => {
   })
   it('create render function with defaultSetting start with interpolate', () => {
     var renderer = template(
+      {
+        escape: ['<%-', '%>'],
+        evaluate: ['<%', '%>'],
+        interpolate: ['<%=', '%>']
+      },
       '<%=string%>'+
       '<ul>'+
         '<%array.forEach((item) => {%>'+
