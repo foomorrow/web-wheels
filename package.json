@@ -5,12 +5,13 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter spec"
   },
   "keywords": [],
   "author": "shellsong",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^1.17.1"
+    "mocha": "^1.17.1",
+    "promises-aplus-tests": "*"
   }
 }
