@@ -5,8 +5,14 @@ coverage/
 =======
 .DS_Store/
 node_modules/
+npm-debug.log
 .idea/
 .vscode/
+<<<<<<< HEAD
 
 >>>>>>> cfc0c58... initial commit
 
+=======
+coverage/
+reports/
+>>>>>>> 2f31635... add promise and eventemitter

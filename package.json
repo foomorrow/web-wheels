@@ -33,7 +33,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "lint": "eslint -o reports/eslint.html -f html src/** --ignore-pattern **/__tests__/** ",
+    "promise-test": "promises-aplus-tests specs/helpers/promise-adapter.js",
+    "test": "npm run promise-test && jest"
   },
   "keywords": [],
   "author": "",
@@ -47,7 +49,8 @@
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
-    "jest": "^18.1.0"
+    "jest": "^18.1.0",
+    "promises-aplus-tests": "^2.1.2"
   },
   "babel": {
     "presets": [
@@ -55,7 +58,27 @@
     ]
   },
   "jest": {
+<<<<<<< HEAD
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest"
 >>>>>>> cfc0c58... initial commit
+=======
+    "automock": false,
+    "transform": {
+      ".js": "<rootDir>/node_modules/babel-jest"
+    },
+    "collectCoverage": true,
+    "verbose": true
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {}
+    },
+    "env": {
+      "node": true
+    }
+>>>>>>> 2f31635... add promise and eventemitter
   }
 }
