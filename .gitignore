@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 .DS_Store
 node_modules/
 coverage/
+=======
+.DS_Store/
+node_modules/
+.idea/
+.vscode/
+
+>>>>>>> cfc0c58... initial commit
 
