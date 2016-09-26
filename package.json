@@ -70,11 +70,14 @@
     "verbose": true
   },
   "eslintConfig": {
-    "extends": "eslint:recommended",
     "parserOptions": {
       "ecmaVersion": 6,
       "sourceType": "module",
       "ecmaFeatures": {}
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-unused-vars": 0
     },
     "env": {
       "node": true

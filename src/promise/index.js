@@ -101,7 +101,7 @@ Promise.prototype.then = function then(onFulfilled, onRejected){
   })
   return promise
 }
-Promise.resolve = (value) => new Promise((resolve) => resolve(value))
+Promise.resolve = (value) => new Promise((resolve, reject) => resolve(value))
 Promise.reject = (reason) => new Promise((resolve, reject) => reject(reason))
 
 module.exports = Promise
