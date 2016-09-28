@@ -4,12 +4,12 @@ function VNode(tag, props, children){
   this.children = children
   const { key } = props
 }
-function Component(props, context){
+function VComponent(props, context){
 
 }
 function createElement(tag, props, ...children){
   if(typeof tag === 'function'){
-    return new tag(Object.assign({}, props, { children }), context)
+    return new tag(Object.assign({}, props, { children }))
   }else{
     return new VNode(tag, props, children)
   }
@@ -17,19 +17,19 @@ function createElement(tag, props, ...children){
 Object.assign(VComponent.prototype, {
   setState(){
 
-  }
+  },
   replaceState(){
 
-  }
+  },
   forceUpdate(){
 
-  }
+  },
   componentWillMount(){
 
-  }
+  },
   componentDidMount(){
 
-  }
+  },
   render(){
     throw new Error('must impl')
   }
