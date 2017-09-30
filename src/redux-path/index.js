@@ -1,7 +1,3 @@
-
-
-
-
 const actions = {
   INIT_ACTIONS: createAction(
     (params) => (dispatch) => {}, 
@@ -14,5 +10,5 @@ const actions = {
       }
     ]
   )
-  
+ 
 }
